@@ -31,7 +31,7 @@
 
 .client__item {
     width: 100%;
-    @media screen and (max-width: 480px) {
+    @media screen and (min-width: 450px) {
             width: calc((100% - 30px) / 2);
         }
     

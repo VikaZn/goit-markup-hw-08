@@ -62,18 +62,23 @@
 }
 
 .portfolio__list {
+    @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
+    
+
+}
 }
 
 .portfolio__item {
     margin: 15px;
-    /*width: 370px;*/
-    flex-basis: calc(100% / 3 - 30px);
-    @media screen and (min-width: 768px) {
-            width: calc(100% / 2 - 30px);
     
+    @media screen and (min-width: 768px) {
+        width: calc(100% / 2 - 30px); }
+
+    @media screen and (min-width: 1200px) {
+            width: calc(100% / 3 - 30px); 
         }
 }
 
@@ -114,7 +119,7 @@
     color: var(--second-text-color);
 }
 .portfolio-thumb {
-    margin-top: -4px;
+    /*margin-top: -4px;*/
     flex-grow: 1;
     padding: 20px 24px;
 

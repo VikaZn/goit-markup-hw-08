@@ -19,17 +19,12 @@
 
 .pictures__list {
     display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 30px;
-    
+
 
 }
-.pictures__item {
-    width: 100%;
-    @media screen and (min-width: 1200px) {
-            width: calc((100% - 90px) / 3);
-        }
+
+.pictures__item:not(:last-child) {
+    margin-right: 30px;
 }
 
 .pictures-thumb {
