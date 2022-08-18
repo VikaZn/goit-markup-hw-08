@@ -190,6 +190,11 @@ img {
     margin-left: 84px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .contacts {
+    margin-left: auto;
+  }
+}
 
 .contacts__list {
   display: flex;
@@ -238,11 +243,6 @@ img {
   color: var(--accent-color);
 }
 
-@media screen and (min-width: 768px) {
-  .contacts__link--mail {
-    padding-top: 20px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .contacts__link--mail {
     padding-top: 32px;
@@ -250,11 +250,6 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .contacts__link--tel {
-    padding-bottom: 20px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .contacts__link--tel {
     padding-top: 32px;
@@ -525,13 +520,9 @@ img {
 .basic__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 30px;
 }
 
-.basic__item {
-  max-width: 270px;
-}
 @media screen and (min-width: 768px) {
   .basic__item {
     width: calc((100% - 30px) / 2);
@@ -854,23 +845,18 @@ img {
   .footer__container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding-left: 76px;
-    padding-right: 89px;
+    justify-content: space-around;
+    align-items: baseline;
   }
 }
 @media (min-width: 1200px) {
   .footer__container {
-    align-items: baseline;
     padding-left: 15px;
     padding-right: 15px;
   }
 }
 
 .footer-address {
-  /*margin-right: auto;
-  margin-left: auto;
-  padding-bottom: 60px;*/
   margin-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
@@ -911,9 +897,6 @@ img {
 }
 
 .footer-soc {
-  /*margin-right: auto;
-  margin-left: auto;
-  padding-bottom: 60px;*/
   margin-bottom: 60px;
 }
 @media (min-width: 1200px) {
@@ -982,13 +965,16 @@ img {
 }
 @media (min-width: 768px) {
   .footer__input {
+    display: flex;
     width: 450px;
   }
 }
 @media (min-width: 1200px) {
   .footer__input {
+    display: inline;
     width: 358px;
     margin-right: 12px;
+    margin-bottom: 0;
   }
 }
 
@@ -1095,13 +1081,16 @@ img {
   .portfolio__list {
     display: flex;
     flex-wrap: wrap;
-    margin: -15px;
+    gap: 30px;
   }
 }
 
-.portfolio__item {
-  margin: 15px;
+@media screen and (max-width: 767px) {
+  .portfolio__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
+
 @media screen and (min-width: 768px) {
   .portfolio__item {
     width: calc(50% - 30px);

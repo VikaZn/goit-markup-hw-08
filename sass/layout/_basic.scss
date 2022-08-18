@@ -12,16 +12,12 @@
 .basic__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 30px;
 
 }
 
 .basic__item {
-    max-width: 270px;
-
-
-
+    
     @media screen and (min-width: 768px) {
     width: calc((100% - 30px) / 2);    
     }

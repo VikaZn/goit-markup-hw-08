@@ -65,19 +65,23 @@
     @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    margin: -15px;
+    gap: 30px;
     
 }
 }
-
+.portfolio__item:not(:last-child) {
+    @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+    }
+}
 .portfolio__item {
-    margin: 15px;
     
     @media screen and (min-width: 768px) {
         width: calc(100% / 2 - 30px); }
-
+        
     @media screen and (min-width: 1200px) {
-            width: calc(100% / 3 - 30px); 
+            width: calc(100% / 3 - 30px);
+            
         }
 }
 

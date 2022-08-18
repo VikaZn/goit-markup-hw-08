@@ -83,6 +83,9 @@ margin-left: auto;
 @media screen and (min-width: 768px) {
 margin-left: 84px;
     }
+    @media screen and (min-width: 1200px) {
+        margin-left: auto;
+            }
 }
 .contacts__list {
 display: flex;
@@ -132,19 +135,14 @@ align-items:center;
 }
 
 .contacts__link--mail {
-    @media screen and (min-width: 768px) {
-    padding-top: 20px;
     
-}
 @media screen and (min-width: 1200px) {
     padding-top: 32px;
     padding-bottom: 32px;
 }
 }
 .contacts__link--tel {
-        @media screen and (min-width: 768px) {
-            padding-bottom: 20px;
-        }
+        
                 @media screen and (min-width: 1200px) {
                     padding-top: 32px;
                     padding-bottom: 32px;
