@@ -146,9 +146,6 @@ img {
   }
 }
 
-/*.nav__item {
-    display: block;
-}*/
 .nav__item:not(:last-child) {
   margin-right: 50px;
 }
@@ -200,6 +197,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  margin-left: auto;
 }
 @media screen and (max-width: 767px) {
   .contacts__list {
@@ -1160,7 +1158,7 @@ img {
   line-height: 1.55;
   color: var(--third-text-color);
   background: rgba(33, 150, 243, 0.9);
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
